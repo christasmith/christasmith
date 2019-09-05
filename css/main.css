@@ -1,11 +1,14 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
-    color: #222;
+    scroll-behavior: smooth;
     font-size: 1em;
     line-height: 1.4;
 }
-
+a{
+    color:black;
+    text-decoration: none;
+}
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -15,16 +18,43 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 hr {
-    display: block;
-    height: 1px;
+    margin: 0;
+    padding:0;
     border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+    display:block;
+    width: 100%;
+    background-color:gray;
+    height: 1px;
+  }
+
+  h1, h2, h3{
+    font-family: 'Playfair Display', serif;
 }
 
+   h4, p , li , button, footer{
+    font-family: 'Crimson Text', serif;
+}
+h2{
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+p{
+    font-size:.9rem;
+}
 audio,
 canvas,
 iframe,
@@ -51,148 +81,166 @@ textarea {
     padding: 0.2em 0;
 }
 
-header{
-    padding-top: 1rem;
-}
-
-main {
-    text-align: center;
-}
-
 
 /* ===== Initializr Styles ==================================================
    ========================================================================== */
 
+html,
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+width: 100%;
+height: 100%;
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
+footer{
     text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: black;
+    background-color:rgb(230, 230, 230);
 }
-
-nav a:hover,
-nav a:visited {
-    color: pink;
+main{
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
-
-nav a:hover {
-    text-decoration: underline;
+.interests i:nth-child(even){
+    color:rgb(206, 205, 205);
 }
-
-/* ==============
-    MOBILE: Main
-   ============== */
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-   .main-header{
-       display: inline;
-       text-align: left;
+
+.row{
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+}
+
+.main-header{
        line-height:initial;
        font-size: 3em;
-   }
-
-   #main-image{
-       float: left;
-       height: 20em;
-   }
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-   .wrapper{
-      text-align: center;
-   }
-
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
 }
 
-@media only screen and (min-width: 768px) {
+.secondary-header{
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
 
-/* ============
-    WIDE: Menu
-   ============ */
-    nav {
-        font-size: 0.9em;
-        float: right;
-        width: 38%;
-    }
+     /* Flexbox stuff */
+     display: flex;
+     justify-content: center;
+     align-items: center;
 
-/* ============
-    WIDE: Main
-   ============ */
+    /* Text styles */
+     text-align: center;
+     color: white; /* ADD THIS LINE */
+
+      /* Background styles */
+    background-image:  url(../img/grass.JPG);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 
-@media only screen and (min-width: 1140px) {
+.profile-card{
+    text-align: center;
+}
 
-/* ===============
-    Maximal Width
-   =============== */
+.profile-desc{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: justify;
+}
+.interests{
+    font-size: 2rem;
+}
+.avatar-experience{
+    height: 9%;
+    width: 9%;
+    border-radius: 4rem;
+}
 
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
+#avatar-profile{
+    padding:1rem;
+    display: inline-block;
+    width: 70%;
+}
+
+.experience-card{
+    margin-bottom: 1rem;
+    display: inline-flex;
+}
+
+.experience-details{
+    display: inline;
+    margin-left: 0.5rem;
+}
+
+.experience-details p{
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+
+}
+
+.academia{
+    background-color:rgb(230, 230, 230);
+    text-align: center;
+}
+
+.recognition-text{
+    margin:1rem;
+}
+
+.image-banner{
+    display: inline-flex;
+    margin-bottom:1.5rem;
+}
+
+.card{
+    padding: 0;
+    width:18rem;
+}
+
+.card-text{
+    text-align: justify;
+}
+.speech{
+        width:50%;
+}
+
+.diversity, .projects{
+    text-align:center;
+}
+.image-diversity{
+    width:35%;
+}
+#speechaddress:hover{
+opacity: 0.5;
+cursor: pointer;
+}
+
+.text-diversity{
+    width:90%;
+}
+.image-proj{
+    width:45%;
+}
+
+.text-diversity-text{
+    text-align: justify;
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  margin: 10px 10px;
+  font-size: 14px;
+  text-align: center;
 }
 
 /* ==========================================================================
@@ -300,5 +348,28 @@ nav a:hover {
     h2,
     h3 {
         page-break-after: avoid;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 600px) {
+    .image-banner{
+        display: inline-block;
+    }
+    .speech{
+        width: 90%;
+    }
+    .image-proj{
+        width:90%;
+    }
+    }
+
+@media only screen and (max-width : 800px) {
+    .image-banner{
+        display: inline-block;
+    }
+
+    .card{
+        padding: 0;
     }
 }

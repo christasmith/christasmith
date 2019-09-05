@@ -1,67 +1,256 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
+<!-- [if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><! -->
 <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- [if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<section class="hero">
+    <div class="hero-inner">
+        <h1 class="main-header">Hi my name is christa</h1>
+        <a href="#me">
+            <button type="button" class="btn btn-secondary btn-lg">Learn more</button>
+        </a>
+    </div>
+</section>
 
-        <div class="header-container">
-            <header class="wrapper clearfix">
-               <h1 class="title main-header">Hi, my name is chirsta</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Experience</a></li>
-                        <li><a href="#">Contact Me</a></li>
-                    </ul>
-                </nav>
-            </header>
+<main tabindex="-1">
+    <section class="row">
+
+        <section class="profile col-sm-4">
+            <div class="profile-card" id='me'>
+
+                <img id="avatar-profile" alt="Profile style image of Christa Smith" src="./img/photo.jpg">
+                <h2> Christa Smith </h2>
+                <p class="profile-desc pr-3 pl-3"> I am a passionate developer and technology advocate, who enjoys creative problem solving and using the latest technologies to realise innovative
+                solutions. Having taken on both technical and client facing roles, I believe I can be an effecitve part of any team, whislt remianing a strong individual contributor from a technical standpoint. </p>
+                <span class="profile-contact">
+                    <a class="btn btn-primary btn-sm" rel="publisher" href="mailto:christasmithh@gmail.com">
+                        <i class="fa fa-envelope"></i></a>
+                    <a class="btn btn-warning btn-sm" rel="publisher" href="https://www.linkedin.com/in/christa-smith-a490069b/">
+                        <i class="fa fa-id-card"></i></a>
+                </span>
+                <h2> Skills & Languages </h2>
+                <div class="container">
+                      <div class="chart" data-percent="80">HTML5</div>
+                      <div class="chart" data-percent="30">CSS3</div>
+                      <div class="chart" data-percent="60">SASS</div>
+                      <div class="chart" data-percent="50">jQuery</div>
+                      <div class="chart" data-percent="11">AngularJS</div>
+                        <div class="chart" data-percent="20">BackboneJS</div>
+                      <div class="chart" data-percent="30">NodeJS</div>
+                      <div class="chart" data-percent="60">PHP</div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="experience col-sm pt-2">
+            <h2> Experience </h2>
+
+            <div class="experience">
+                <div class="experience-card">
+                    <img class="avatar-experience" src="./img/microsoft.jpg" alt="Microsoft Logo">
+                    <div class="experience-details">
+                        <h3 class="exeperience-details-company"> Microsoft </h3>
+                        <h4 class="exeperience-details-role"> Technical consultant </h4>
+                        <p class="exeperience-details-desc"> TBC
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img class="avatar-experience" src="./img/grad.png" alt="Graduation icon">
+                    <div class="experience-details">
+                        <h3 class="exeperience-details-company">University of Surrey (2019) </h3>
+                        <h4 class="exeperience-details-role"> Bsc Computing & Information Technology </h4>
+                        <p class="exeperience-details-desc"> Attained a first-class honors degree from the University of
+                            Surrey.
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img class="avatar-experience" src="./img/compsoc.jpg" alt="CompSoc Logo">
+                    <div class="experience-details">
+                        <h3 class="exeperience-details-company"> The University of Surrey Computing Society
+                            (2018-2019) </h3>
+                        <h4 class="exeperience-details-role"> President </h4>
+                        <p class="exeperience-details-desc">
+                            CompSoc is The University of Surrey's Department of Computing Society, which aims to connect
+                            and support those with interests in Computer Science and related fields. We organise social,
+                            academic and industrial events.
+
+                            Responsibilities:
+                            - Oversee all aspects of the society
+                            - Create new initiatives and events for the society
+                            - Collaborate with our university department to maximise our society’s resources and provide
+                            better events for our members
+                            - Build working relationships with external groups and individuals
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img class="avatar-experience" src="./img/expedia.jpg" alt="Expedia Group logo">
+                    <div class="experience-details">
+                        <h3 class="exeperience-details-company"> Expedia Group (Industrial Placement Year
+                            2017-2018) </h3>
+                        <h4 class="exeperience-details-role"> Software Engineer </h4>
+                        <p class="exeperience-details-desc">
+                            Working in two brands (Expedia and EPS) during my time. Developing both front and backend
+                            applications.
+                            Technologies include: Java, Spring, AWS, React.js, JavaScript, Sass, Docker.
+                            Outside of my day to day, I was also involved with campus recruitment, running a series of coding lessons for those in business facing roles and organising a women in STEM
+                            events.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <img class="avatar-experience" src="./img/uni.jpg" alt="University of surrey logo">
+                    <div class="experience-details">
+                        <h3 class="exeperience-details-company">University of Surrey (2015-2019)</h3>
+                        <h4 class="exeperience-details-role"> Lab Helper & Applicant/Open day helper</h4>
+                        <p class="exeperience-details-desc"> As a lab helper I assisted and mentored younger students
+                            throughout the course of two university modules: Object Oriented Programming and Software
+                            Engineering. In addition, I was an applicant day helper throughout my time at university
+                            which included giving presentations about my time at university, my role in CompSoc and
+                            general assistance throughout all applicant & open days held by the computer science.
+                            department </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <section class="academia">
+        <h2> Achievements </h2>
+        <div class="image-banner row">
+        <div class=" col-sm card">
+            <img class="card-img-top" src="./img/shepad.png" alt="Christa holding prize">
+            <div class="card-body">
+                <h3> The Shephard Memorial Prize </h3>
+                <p class="card-text"> Awarded The Sheppard Memorial Prize in 2017 for outstanding performance in the
+                    second year of the Computing and Information Technology programme.</p>
+            </div>
         </div>
-
-        <main class="main-container">
-            <article class="main wrapper clearfix">
-              <figure>
-                <img id='main-image' src="img/photo.jpg"" alt="Christa smith">
-              </figure>
-            </article> 
-        </main>
-
-        <div class="footer-container">
-            <footer class="wrapper">
-                <h3></h3>
-            </footer>
+        <div class="col-sm card">
+            <img class="card-img-top" src="./img/bCS.jpg" alt="BCS membership logo">
+            <div class="card-body">
+                <h3> Top 5 Performing Gradaduates within Computer Science</h3>
+                <p class="card-text"> Elected as one of the top 5 best performing graduates, receiving the prize of
+                    'Free one-year BCS Professional membership for graduates'.</p>
+            </div>
         </div>
+        <a href="https://youtu.be/QP0i2yzc72k?t=3129" target="blank">
+            <div id="speechaddress" class="col-sm card">
+                <img class="card-img-top" src="./img/GraduationDay.jpg" alt="Christa at graduation">
+                <div class="card-body">
+                    <h3> Delivered the Graduation Student Address </h3>
+                    <p class="card-text"> Achieved a First Class Degree and was selected to deliver the student address at
+                        graduation.</p>
+                </div>
+            </div>
+        </a>
+        </div>
+    </section>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <section class=" president">
+        <div class="row">
 
-        <script src="js/main.js"></script>
+            <section class="diversity col-sm">
+                <h2> Diversity & Inclusion Efforts</h2>
+                <img src="./img/pride.jpeg" class="image-diversity" alt="Christa at pride">
+                <img src="./img/lgbt.jpg" class="image-diversity" alt="Christa hosting LGBTQ event">
+                <img src="./img/compsocpres.png" class="image-diversity" alt="CompSoc committee">
+                <img src="./img/university.png" class="image-diversity" alt="CompSoc girls event">
+                <div class="text-diversity container pt-3">
+                    <p class="text-diversity-text">
+                        Diversity and inclusion is something that I have decicated time towards both during university and throughout my placement year at Expedia.
+                        As president of the computing society I decided to make it a priority for our society and so we hosted a number of events including: women coding meet ups,
+                        LGBTQ+ night showing 'The imitation game' and many more. In additon, whilst at Expedia I organised and hosted a Women in Tech event at our office for graduates around the UK to attend.
+                        I also participated in pride london on behalf of Expedia.
+                    </p>
+                </div>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+            </section>
+
+
+            <section class="projects col-sm">
+                <h2>Projects</h2>
+                <img class="image-proj" src="./img/davidash.jpg" alt="Davidashfordpianotuning.com on devices">
+                <img class="image-proj" src="./img/littlex.jpg" alt="littlexplorers.com on devices">
+                <h4> Freelance Web Design & Creation</h4>
+                <p>
+                  Developing and launching responsive websites for clients, using technologies including CSS/HTML5/React/JS and more. Structuring projects throughout all developement stages including: regular meetings/communication with the clients, design, implementation and finally hosting.
+                </p>
+
+
+                <img class="image-proj" src="./img/disso2.png" alt="littlexplorers.com on devices">
+                <video controls>
+                  <source src="./imgs/Disso.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <h4> A Computer Vision-Based Fall Detection System for the Elderly</h4>
+                <p>
+                    The project tackled the issue of elderly people experiencing a high number of falls in the home and the time taken to provide assistance as a result of the fall,
+                     by investigating the potential of vision-based fall detection systems and as a result of this,
+                     creates an end-to-end proof of concept system, capable of detecting falls with an accuracy of 92% in controlled environments.
+                     The project explores and makes use of Convolutional Neural Networks in order to perform the classification of fall events and
+                      then leverages this as part of the overall functionality. Lastly, this project creates a progressive web application which
+                      allows a user to monitor and track the person at risk.
+                </p>
+          </section>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+ Copyright &copy Christa Smith 2019 All rights reserved.
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function () {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
 </html>

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = ["Hi.  My name is Christa. "];
-  
+  var dataText = ["Hi. Welcome to my site. "];
+
   // type one text in the typwriter
   // keeps calling itself until the text is finished
   function typeWriter(text, i, fnCallback) {
@@ -39,4 +39,5 @@ document.addEventListener('DOMContentLoaded',function(event){
   }
   // start the text animation
   StartTextAnimation(0);
+
 });
